@@ -1,15 +1,18 @@
 import { Inter } from 'next/font/google'
-import Navbar from '../components/Navbar'
+import Navbar from '@/components/Navbar'
+import CurriculoForm from '@/components/CurriculoForm'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Job() {
   return (
-    <div>
-      <main>
+    <section>
+      <div>
         <Navbar />
-        <h1>trabalhe conosco</h1>
-      </main>
-    </div>
+      </div>
+      <div>
+        <CurriculoForm />
+      </div>
+    </section>
   )
 }
