@@ -3,18 +3,18 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 
 const Map = () => {
   const containerStyle = {
-    width: '100%',
-    height: '400px'
+    width: '1000px',
+    height: '600px'
   }
 
   const center = {
-    lat: -23.5627964,
-    lng: -46.6549969
+    lat: -22.45479,
+    lng: -47.52916
   }
 
   return (
-    <LoadScript googleMapsApiKey={process.env.YOUR_API_KEY}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
+    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_API_KEY}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={20}>
         <Marker position={center} />
       </GoogleMap>
     </LoadScript>

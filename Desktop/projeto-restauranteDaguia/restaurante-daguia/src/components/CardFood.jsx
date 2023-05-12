@@ -15,7 +15,7 @@ const Card = ({ image, title, description }) => {
           />
         </div>
         <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+          <div className="uppercase tracking-wide text-sm text-red-500 font-bold">
             {title}
           </div>
           <p className="mt-2 text-gray-500">{description}</p>
