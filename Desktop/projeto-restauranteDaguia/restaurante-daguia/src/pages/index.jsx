@@ -4,20 +4,24 @@ import Button from '@/components/Button'
 import Carrousel from '@/components/Carrousel'
 import ButtonAppBar from '@/components/ButtonAppBar'
 
+import Map from '@/components/Map'
+import Icons from '@/components/Icons'
+import Navbar from '@/components/Navbar'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div>
       <main>
-        <ButtonAppBar />
-        <div class="h-screen max-h-full bg-cover bg-center flex items-center bg-[url('/images/home.jfif')]">
-          <div class="container mx-auto px-6 flex items-center justify-center">
-            <div class="text-center lg:text-left">
-              <h1 class="text-5xl uppercase text-white font-bold">
+        <Navbar />
+        <div className="h-screen max-h-full bg-cover bg-center flex items-center bg-[url('/images/home.jfif')]">
+          <div className="container mx-auto px-6 flex items-center justify-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl uppercase text-white font-bold">
                 O melhor frango à parmegiana da cidade!
               </h1>
-              <p class="text-xl text-gray-200 my-4">
+              <p className="text-xl text-gray-200 my-4">
                 Seja Bem-vindo ao restaurante com mais história da cidade!
               </p>
 
@@ -64,26 +68,68 @@ export default function Home() {
               }
             />
             <CardFood
-              image={'/images/test.jpg'}
-              title={'Aparmegiana de frango'}
+              image={'/images/pizza.jpg'}
+              title={'Pizza'}
               description={
-                ' ssumenda fugit veniam quos labore ssumenda fugit veniam quos labore ssumenda fugit veniam quos labore'
+                'As pizzas do Daguia, entregamos muitas durante as noites de sabado. Disponiveís nos principais sabores, chega quentinha na sua casa para alegrar o seu final de semana. '
               }
             />
           </div>
+        </section>
+        <section className="m-10">
           <div className="text-center mt-10">
             <h2 className="text-3xl font-semibold">
               O que você encontrará em nosso restaurante ?
             </h2>
-            <p className="mt-2 text-lg ">
-              Temos nosso incrível self-service , com diversos sabores para
-              serem provados.
-            </p>
-            <p className="text-lg y">
-              No qual voçê pode optar por comer a vontade ou comer por quilo!
-            </p>
+            <ul>
+              <li className="text-lg ">
+                Temos nosso incrível self-service , com diversos sabores para
+                serem provados. No qual voçê pode optar por comer a vontade ou
+                comer por quilo!
+              </li>
+              <li className="text-lg">
+                Possuimos uma grande variadade de pratos incriveis para você e
+                sua familia, que podem ser pedidos tanto no almoço quando no
+                jantar.
+              </li>
+              <li className="text-lg">
+                Temos também uma grande variedades de porções e pizzas , além de
+                sucos e nossa famosa caipirinha.
+              </li>
+              <li className="text-lg">
+                E o melhor , tudo isso pode ser entregue no conforto da sua
+                casa.
+              </li>
+            </ul>
           </div>
         </section>
+        <section className="m-10 p-4 w-full ml-0">
+          <div className="flex flex-col md:flex-row items-center justify-between bg-amber-700 p-4  rounded-3xl">
+            <div className=" md:w-1/2 md:pr-8 text-white">
+              <h2 className="text-5xl font-semibold">
+                Nossas informações de contato:
+              </h2>
+              <div className="text-xl mt-16 ml-6">
+                <ul>
+                  <li>Telefone: (19) 3545-4183</li>
+                  <li>Email: Restaurante.daguia@gmail.com</li>
+                  <li>
+                    Endereço: Av. Um, 133-149 - Centro, Santa Gertrudes - SP,
+                    13510-000
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="md:w-1/2 border-rose-950 mt-4 mb-4 ">
+              <div>
+                <Map />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="mb-8">
+          <Icons />
+        </div>
       </main>
     </div>
   )

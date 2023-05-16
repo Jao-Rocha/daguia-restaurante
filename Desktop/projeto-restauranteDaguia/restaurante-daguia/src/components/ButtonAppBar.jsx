@@ -40,9 +40,7 @@ export default function ButtonAppBar() {
             <Button color="inherit">
               <Link href="/">Inicio</Link>
             </Button>
-            <Button color="inherit">
-              <Link href="/contact">Contato</Link>
-            </Button>
+
             <Button color="inherit">
               <Link href="/job">Trabalhe Conosco</Link>
             </Button>

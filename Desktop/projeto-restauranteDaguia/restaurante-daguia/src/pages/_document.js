@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
 
-      <body className="bg-amber-700 bg-fixed bg-no-repeat">
+      <body className="bg-amber-700 bg-fixed bg-no-repeat w-full">
         <Main />
 
         <NextScript />
