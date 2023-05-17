@@ -51,7 +51,7 @@ const CurriculoForm = () => {
 
   return (
     <div className="max-w-md mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Envie seu currículo</h1>
+      <h1 className="text-2xl font-bold mb-4">Envie seu currículo.</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block mb-1">

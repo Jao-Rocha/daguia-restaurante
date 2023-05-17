@@ -27,7 +27,7 @@ const Icons = () => {
         fontSize="large"
         className=" cursor-pointer"
         onClick={() => {
-          // adicione aqui o código que será executado ao clicar no ícone do WhatsApp
+          handleClick('https://api.whatsapp.com/send?phone=5519998930305')
         }}
       />
     </div>
