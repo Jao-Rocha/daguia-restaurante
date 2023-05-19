@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import ButtonAppBar from '@/components/ButtonAppBar'
 import CurriculoForm from '@/components/CurriculoForm'
 import Navbar from '@/components/Navbar'
 import Icons from '@/components/Icons'

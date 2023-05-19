@@ -1,9 +1,6 @@
 import { Inter } from 'next/font/google'
 import CardFood from '@/components/CardFood'
 import Button from '@/components/Button'
-import Carrousel from '@/components/Carrousel'
-import ButtonAppBar from '@/components/ButtonAppBar'
-
 import Map from '@/components/Map'
 import Icons from '@/components/Icons'
 import Navbar from '@/components/Navbar'
@@ -104,7 +101,7 @@ export default function Home() {
           </div>
         </section>
         <section className="m-10 p-4 w-full ml-0">
-          <div className="flex flex-col md:flex-row items-center justify-between bg-amber-700 p-4  rounded-3xl">
+          <div className=" bg-red-900 flex flex-col md:flex-row items-center justify-between  p-4  rounded-3xl">
             <div className=" md:w-1/2 md:pr-8 text-white">
               <h2 className="text-5xl font-semibold">
                 Nossas informações de contato:

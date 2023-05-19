@@ -62,7 +62,7 @@ const CurriculoForm = () => {
             id="name"
             value={name}
             onChange={e => setName(e.target.value)}
-            className="w-full border border-gray-300 rounded p-2"
+            className="w-full border border-gray-300 rounded-xl p-2"
             required
           />
         </div>
@@ -75,7 +75,7 @@ const CurriculoForm = () => {
             id="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="w-full border border-gray-300 rounded p-2"
+            className="w-full border border-gray-300 rounded-xl p-2"
             required
           />
         </div>
@@ -87,7 +87,7 @@ const CurriculoForm = () => {
             id="description"
             value={description}
             onChange={e => setDescription(e.target.value)}
-            className="w-full border border-gray-300 rounded p-2"
+            className="w-full border border-gray-300 rounded-xl p-2"
             required
           ></textarea>
         </div>
@@ -105,7 +105,7 @@ const CurriculoForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+          className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg ease-in duration-300"
         >
           Enviar
         </button>
