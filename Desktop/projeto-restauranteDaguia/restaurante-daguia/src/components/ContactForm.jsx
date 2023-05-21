@@ -1,52 +1,48 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-const CurriculoForm = () => {
+const ContactForm = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [description, setDescription] = useState('')
-  const [curriculum, setCurriculum] = useState(null)
+  const [file, setFile] = useState(null)
 
   const handleSubmit = e => {
     e.preventDefault()
 
-    // Aqui você pode adicionar a lógica para enviar o currículo por e-mail
+    // Configurar o serviço de email
+    emailjs.init('yt40IMG_nifxO4bv_')
+
+    // Configurar o template do email
     const templateParams = {
-      from_name: nome,
+      from_name: name,
       from_email: email,
-      message_html: 'Currículo enviado'
+      message: description,
+      file: file
     }
 
-    // Verifica se o currículo foi selecionado
-    if (curriculum) {
-      templateParams.curriculum = curriculum
+    // Enviar o email
+    if (name != '' && email != '' && description != '') {
+      emailjs
+        .send('gmailDaguia', 'template_ev9te19', templateParams)
+        .then(response => {
+          console.log(
+            'Email enviado com sucesso!',
+            response.status,
+            response.text
+          )
+          alert('Enviado com sucesso!')
+        })
+        .catch(error => {
+          console.error('Ocorreu um erro ao enviar o email:', error)
+        })
+    } else {
+      alert('Erro ao enviar , tente novamente!')
     }
-
-    emailjs
-      .send(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        templateParams,
-        process.env.USER_ID
-      )
-      .then(response => {
-        console.log(
-          'Currículo enviado com sucesso!',
-          response.status,
-          response.text
-        )
-        alert('Currículo enviado com sucesso!')
-      })
-      .catch(error => {
-        console.error('Erro ao enviar o currículo:', error)
-        alert('Erro ao enviar o currículo!')
-      })
-
-    // Resetar os campos do formulário
+    //reset
     setName('')
     setEmail('')
     setDescription('')
-    setCurriculum('')
   }
 
   return (
@@ -58,25 +54,23 @@ const CurriculoForm = () => {
             Nome:
           </label>
           <input
+            className="w-full border border-gray-300 rounded-xl p-2"
             type="text"
             id="name"
             value={name}
             onChange={e => setName(e.target.value)}
-            className="w-full border border-gray-300 rounded-xl p-2"
-            required
           />
         </div>
         <div>
           <label htmlFor="email" className="block mb-1">
-            E-mail:
+            Email:
           </label>
           <input
+            className="w-full border border-gray-300 rounded-xl p-2"
             type="email"
             id="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="w-full border border-gray-300 rounded-xl p-2"
-            required
           />
         </div>
         <div>
@@ -84,23 +78,20 @@ const CurriculoForm = () => {
             Descrição:
           </label>
           <textarea
+            className="w-full border border-gray-300 rounded-xl p-2"
             id="description"
             value={description}
             onChange={e => setDescription(e.target.value)}
-            className="w-full border border-gray-300 rounded-xl p-2"
-            required
           ></textarea>
         </div>
         <div>
-          <label htmlFor="curriculum" className="block mb-1">
-            Curriculo:
+          <label htmlFor="file" className="block mb-1">
+            Arquivo:
           </label>
           <input
             type="file"
-            id="curriculum"
-            value={curriculum}
-            onChange={e => setCurriculum(e.target.files[0])}
-            required
+            id="file"
+            onChange={e => setFile(e.target.files[0])}
           />
         </div>
         <button
@@ -114,4 +105,4 @@ const CurriculoForm = () => {
   )
 }
 
-export default CurriculoForm
+export default ContactForm
