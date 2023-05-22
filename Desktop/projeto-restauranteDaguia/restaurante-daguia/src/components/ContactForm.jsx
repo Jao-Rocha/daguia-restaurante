@@ -1,48 +1,68 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+const userId = process.env.NEXT_PUBLIC_USER_ID
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID
+const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
 
 const ContactForm = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [phoneNumber, setPhoneNumber] = useState(0)
   const [description, setDescription] = useState('')
-  const [file, setFile] = useState(null)
+  const [workExperience, setWorkExperience] = useState('')
+  const [academicExperience, setAcademicExperience] = useState('')
 
   const handleSubmit = e => {
     e.preventDefault()
 
     // Configurar o serviço de email
-    emailjs.init('yt40IMG_nifxO4bv_')
+    emailjs.init(userId)
 
     // Configurar o template do email
     const templateParams = {
       from_name: name,
       from_email: email,
-      message: description,
-      file: file
+      phoneNumber: phoneNumber,
+      description: description,
+      workExperience: workExperience,
+      academicExperience: academicExperience
     }
 
     // Enviar o email
-    if (name != '' && email != '' && description != '') {
+    if (
+      name != '' &&
+      email != '' &&
+      phoneNumber != 0 &&
+      description != '' &&
+      workExperience != '' &&
+      academicExperience != ''
+    ) {
       emailjs
-        .send('gmailDaguia', 'template_ev9te19', templateParams)
+        .send(serviceId, templateId, templateParams)
         .then(response => {
           console.log(
             'Email enviado com sucesso!',
             response.status,
             response.text
           )
-          alert('Enviado com sucesso!')
+          toast.success('Enviado com sucesso!')
         })
         .catch(error => {
           console.error('Ocorreu um erro ao enviar o email:', error)
         })
     } else {
-      alert('Erro ao enviar , tente novamente!')
+      toast.error('Erro ao enviar , tente novamente!')
     }
     //reset
     setName('')
     setEmail('')
     setDescription('')
+    setPhoneNumber(0)
+    setWorkExperience('')
+    setAcademicExperience('')
   }
 
   return (
@@ -74,6 +94,18 @@ const ContactForm = () => {
           />
         </div>
         <div>
+          <label htmlFor="phoneNumber" className="block mb-1">
+            Telefone:
+          </label>
+          <input
+            className="w-full border border-gray-300 rounded-xl p-2"
+            type="number"
+            id="phoneNumber"
+            value={phoneNumber}
+            onChange={e => setPhoneNumber(e.target.value)}
+          />
+        </div>
+        <div>
           <label htmlFor="description" className="block mb-1">
             Descrição:
           </label>
@@ -85,21 +117,35 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <div>
-          <label htmlFor="file" className="block mb-1">
-            Arquivo:
+          <label htmlFor="workExperience" className="block mb-1">
+            Descreva sua experiência profissional:
           </label>
-          <input
-            type="file"
-            id="file"
-            onChange={e => setFile(e.target.files[0])}
-          />
+          <textarea
+            className="w-full border border-gray-300 rounded-xl p-2"
+            id="workExperience"
+            value={workExperience}
+            onChange={e => setWorkExperience(e.target.value)}
+          ></textarea>
         </div>
+        <div>
+          <label htmlFor="academicExperience" className="block mb-1">
+            Descreva sua experiência acadêmica:
+          </label>
+          <textarea
+            className="w-full border border-gray-300 rounded-xl p-2"
+            id="academicExperience"
+            value={academicExperience}
+            onChange={e => setAcademicExperience(e.target.value)}
+          ></textarea>
+        </div>
+
         <button
           type="submit"
           className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg ease-in duration-300"
         >
           Enviar
         </button>
+        <ToastContainer />
       </form>
     </div>
   )

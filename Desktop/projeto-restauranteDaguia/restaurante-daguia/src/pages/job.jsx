@@ -15,7 +15,7 @@ export default function Job() {
       <div className="mt-10 mx-2">
         <ContactForm />
       </div>
-      <div className="mt-40">
+      <div className="mt-14">
         <Icons />
       </div>
     </section>
