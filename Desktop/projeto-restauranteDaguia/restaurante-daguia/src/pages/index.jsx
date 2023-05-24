@@ -36,18 +36,18 @@ export default function Home() {
               Restaurante Daguia, a mais de 35 anos trazendo alegria no almoço e
               no jantar de nossos clientes.
             </p>
-            <p
-              className="mt-2
-          "
-            >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos at,
-              temporibus, dolorum facere praesentium doloremque ut tempora
-              perspiciatis qui, velit tempore! Animi ipsum ab ducimus cum
-              voluptas molestias iure officiis. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Nostrum id repudiandae dolor minima
-              voluptatem tempore facilis harum, deleniti soluta doloribus
-              tempora eaque, obcaecati, optio cum laborum molestiae repellat
-              praesentium eius.
+            <p className="mt-2 m-4 text-justify">
+              O Restaurante Daguia é o mais tradicional comércio da cidade,
+              localizado em Santa Gertrudes – SP. Fundado por Antônio Denardi
+              (Daguia) e Maria Aparecida Denardi (Cidinha), no ano de 1985. A
+              tradição se inicia com uma rotisserie, com o nome “Quero Mais”,
+              onde comercializavam salgados e doces. Com a grande demanda, a
+              necessidade de um espaço maior surge, nascendo assim o atual
+              Restaurante. No novo local, iniciou-se a venda de pratos
+              comerciais durante o almoço, pizzas, lanches e porções no jantar,
+              além de incluir refeições no próprio espaço, devido ao tamanho
+              êxito, a tradição do comércio se estende até os dias atuais, sob o
+              comando da família e dos sócios.
             </p>
           </div>
         </section>
@@ -83,21 +83,21 @@ export default function Home() {
               O que você encontrará em nosso restaurante ?
             </h2>
             <ul>
-              <li className="text-lg ">
+              <li className="text-lg text-center ">
                 Temos nosso incrível self-service , com diversas opções para
                 serem provados. No qual voçê pode optar por comer a vontade ou
                 comer por quilo!
               </li>
-              <li className="text-lg">
+              <li className="text-lg text-center">
                 Possuimos uma grande variadade de pratos incriveis para você e
                 sua familia, que podem ser pedidos tanto no almoço quanto no
                 jantar.
               </li>
-              <li className="text-lg">
+              <li className="text-lg text-center">
                 Temos também uma grande variedade de porções e pizzas , além de
                 sucos e nossa famosa caipirinha.
               </li>
-              <li className="text-lg">
+              <li className="text-lg text-center">
                 E o melhor , tudo isso pode ser entregue no conforto da sua
                 casa.
               </li>
