@@ -33,7 +33,7 @@ export default function Home() {
         <section>
           <div className="text-center mt-10">
             <p className="text-3xl font-semibold">
-              Restaurante Daguia a mais de 15 anos trazendo alegria no almoço e
+              Restaurante Daguia, a mais de 35 anos trazendo alegria no almoço e
               no jantar de nossos clientes.
             </p>
             <p
@@ -43,7 +43,11 @@ export default function Home() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos at,
               temporibus, dolorum facere praesentium doloremque ut tempora
               perspiciatis qui, velit tempore! Animi ipsum ab ducimus cum
-              voluptas molestias iure officiis.
+              voluptas molestias iure officiis. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nostrum id repudiandae dolor minima
+              voluptatem tempore facilis harum, deleniti soluta doloribus
+              tempora eaque, obcaecati, optio cum laborum molestiae repellat
+              praesentium eius.
             </p>
           </div>
         </section>
@@ -80,17 +84,17 @@ export default function Home() {
             </h2>
             <ul>
               <li className="text-lg ">
-                Temos nosso incrível self-service , com diversos sabores para
+                Temos nosso incrível self-service , com diversas opções para
                 serem provados. No qual voçê pode optar por comer a vontade ou
                 comer por quilo!
               </li>
               <li className="text-lg">
                 Possuimos uma grande variadade de pratos incriveis para você e
-                sua familia, que podem ser pedidos tanto no almoço quando no
+                sua familia, que podem ser pedidos tanto no almoço quanto no
                 jantar.
               </li>
               <li className="text-lg">
-                Temos também uma grande variedades de porções e pizzas , além de
+                Temos também uma grande variedade de porções e pizzas , além de
                 sucos e nossa famosa caipirinha.
               </li>
               <li className="text-lg">
@@ -109,7 +113,7 @@ export default function Home() {
               <div className="text-xl mt-16 ml-6">
                 <ul>
                   <li>Telefone: (19) 3545-4183</li>
-                  <li>Email: Restaurante.daguia@gmail.com</li>
+                  <li>Email: restdaguia@gmail.com</li>
                   <li>
                     Endereço: Av. Um, 133-149 - Centro, Santa Gertrudes - SP,
                     13510-000

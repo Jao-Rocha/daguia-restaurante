@@ -12,10 +12,10 @@ export default function Job() {
       <div>
         <Navbar />
       </div>
-      <div className="mt-10 mx-2">
+      <div className="mt-4 mx-2">
         <ContactForm />
       </div>
-      <div className="mt-14">
+      <div className="mt-4 mb-4">
         <Icons />
       </div>
     </section>
