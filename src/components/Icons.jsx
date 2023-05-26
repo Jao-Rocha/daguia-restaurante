@@ -1,6 +1,6 @@
-import Instagram from '@material-ui/icons/Instagram'
-import Facebook from '@material-ui/icons/Facebook'
-import WhatsApp from '@material-ui/icons/WhatsApp'
+import Instagram from '@mui/icons-material/Instagram'
+import Facebook from '@mui/icons-material/Facebook'
+import WhatsApp from '@mui/icons-material/WhatsApp'
 
 const Icons = () => {
   const handleClick = url => {
