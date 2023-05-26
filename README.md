@@ -14,17 +14,27 @@ Essas são as telas iniciais no desktop e no mobile respectivamente. Ao clicar n
 ![Layout 2](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/home-mobile.png) 
 
 
+
 Encontra-se aqui um pouco da história do restaurante, mostrando que esteve por trás durante todos esses anos.
+
 ![Layout 3](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/history-desk.png) 
 
+
+
 Aqui temos alguns cards , mostrando alguns pratos do restaurante.
+
 ![Layout 4](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/card-desk.png) 
 
+
+
 Fiz a integração com a API do google maps , para que o cliente encontre o restaurante com mais facilidade.
+
 ![Layout 5](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/map-desk.png) 
 
 
+
 Essa é a aba "Trabalhe Conosco" que foi destinada a quem queira trabalhar no restaurante e também para que o restaurante gerencie melhor as informações de cada candidato.
+
 ![Layout 6](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/form-mobile.png) 
 
 
