@@ -35,5 +35,14 @@
   "main": "next.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jao-Rocha/daguia-restaurante.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jao-Rocha/daguia-restaurante/issues"
+  },
+  "homepage": "https://github.com/Jao-Rocha/daguia-restaurante#readme"
 }
