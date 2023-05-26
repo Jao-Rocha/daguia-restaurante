@@ -34,6 +34,7 @@ Fiz a integração com a API do google maps , para que o cliente encontre o rest
 
 
 Essa é a aba "Trabalhe Conosco" que foi destinada a quem queira trabalhar no restaurante e também para que o restaurante gerencie melhor as informações de cada candidato.
+Lembrando que no fim de cada aba estão alguns botões que levam para  as redes socias do restaurante.
 
 ![Layout 6](https://github.com/Jao-Rocha/daguia-restaurante/blob/main/Desktop/projeto-restauranteDaguia/restaurante-daguia/assets-to-readme/form-mobile.png) 
 
