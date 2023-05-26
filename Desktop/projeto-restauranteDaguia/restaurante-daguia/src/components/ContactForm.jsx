@@ -10,7 +10,7 @@ const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
 const ContactForm = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState(0)
+  const [phoneNumber, setPhoneNumber] = useState('')
   const [description, setDescription] = useState('')
   const [workExperience, setWorkExperience] = useState('')
   const [academicExperience, setAcademicExperience] = useState('')
@@ -35,7 +35,7 @@ const ContactForm = () => {
     if (
       name != '' &&
       email != '' &&
-      phoneNumber != 0 &&
+      phoneNumber != '' &&
       description != '' &&
       workExperience != '' &&
       academicExperience != ''
@@ -60,7 +60,7 @@ const ContactForm = () => {
     setName('')
     setEmail('')
     setDescription('')
-    setPhoneNumber(0)
+    setPhoneNumber('')
     setWorkExperience('')
     setAcademicExperience('')
   }
@@ -74,6 +74,7 @@ const ContactForm = () => {
             Nome:
           </label>
           <input
+            placeholder="Digite seu nome."
             className="w-full border border-gray-300 rounded-xl p-2"
             type="text"
             id="name"
@@ -86,6 +87,7 @@ const ContactForm = () => {
             Email:
           </label>
           <input
+            placeholder="seuemail@exemplo.com"
             className="w-full border border-gray-300 rounded-xl p-2"
             type="email"
             id="email"
@@ -98,8 +100,9 @@ const ContactForm = () => {
             Telefone:
           </label>
           <input
+            placeholder="(xx) 91234-5678"
             className="w-full border border-gray-300 rounded-xl p-2"
-            type="number"
+            type="text"
             id="phoneNumber"
             value={phoneNumber}
             onChange={e => setPhoneNumber(e.target.value)}
@@ -110,6 +113,7 @@ const ContactForm = () => {
             Descrição:
           </label>
           <textarea
+            placeholder="Conte um pouco sobre você."
             className="w-full border border-gray-300 rounded-xl p-2"
             id="description"
             value={description}
@@ -121,6 +125,7 @@ const ContactForm = () => {
             Descreva sua experiência profissional:
           </label>
           <textarea
+            placeholder="Comente sobre os locais que já trabalhou."
             className="w-full border border-gray-300 rounded-xl p-2"
             id="workExperience"
             value={workExperience}
@@ -132,6 +137,7 @@ const ContactForm = () => {
             Descreva sua experiência acadêmica:
           </label>
           <textarea
+            placeholder="Comente sobre seus estudos."
             className="w-full border border-gray-300 rounded-xl p-2"
             id="academicExperience"
             value={academicExperience}
