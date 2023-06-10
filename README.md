@@ -12,7 +12,7 @@ O foco do projeto foi apresentar o restaurante , por isso o foco do desenvolvime
 ## Layout 
 Essas são as telas iniciais no desktop e no mobile respectivamente. Ao clicar no botão você poderá ver todo o cárdapio do restaurante.
 ![Layout 1](https://github.com/Jao-Rocha/daguia-restaurante/blob/master/assets-to-readme/home-desk.png) 
-            https://github.com/Jao-Rocha/daguia-restaurante/blob/master/assets-to-readme/card-desk.png
+            
 
 ![Layout 2](https://github.com/Jao-Rocha/daguia-restaurante/blob/master/assets-to-readme/home-mobile.png) 
 
